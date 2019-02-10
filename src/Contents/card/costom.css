@@ -1,0 +1,35 @@
+.hackCard{
+  width: auto;
+  height: auto;
+}
+.challengeTitle{
+  font-size: 20px
+}
+ .card-image{
+  height: auto;
+  width: auto;
+}
+.hackImage {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  border: 0px;
+  align-self: center;
+  justify-content: center;
+  display: block;
+  padding: auto;
+}
+.topic{
+  text-align: center;
+  text-transform: capitalize;
+}
+.productCard{
+  width: 20px;
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 20px;
+  margin: 0px;
+  background-color: pink;
+}

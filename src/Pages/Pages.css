@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    font-family: "open sons, roboto, merri weather, lora";
+}
+.slid{
+display: block;
+}
+.hackathon{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec-header{
+text-align: center;
+font-size: 50px;
+width: auto;
+background-color: gold;
+padding: 0;
+margin: 0;
+border: 0;
+background-blend-mode: exclusion;
+}
+
+.bar{
+  background-color: purple;
+  min-height: 52px;
+  height: 64px;
+  margin: 0px;
+}
+.account{
+  width: 80vh;
+  height:auto;
+  margin: auto;
+  margin-top: 100px;
+  padding: 50px;
+}
+.is-primary{
+  background-color: purple
+}
+.is-secondary{
+  background-color: gold
+}
+.is-tertiary{
+  background-color: white
+}

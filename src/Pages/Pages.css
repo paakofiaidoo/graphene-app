@@ -7,7 +7,7 @@ display: block;
 }
 .hackathon{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .sec-header{

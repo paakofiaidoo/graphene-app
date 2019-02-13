@@ -1,0 +1,14 @@
+
+  <button data-addCart class="button button-add-cart"><span>Add To Cart</span></button>
+  <div data-successMessage class="callout success hide">
+    Added to cart, Yay!
+  </div>
+  <script type="text/javascript">
+    ('[data-addCart]').click(function() {
+      (this).addClass('is-adding')
+      setTimeout(function() {
+      ('[data-addCart]').removeClass('is-adding')
+      ('[data-successMessage]').removeClass('hide')
+      }, 2500);
+    });
+  </script>

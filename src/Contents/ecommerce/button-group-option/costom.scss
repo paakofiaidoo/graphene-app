@@ -1,0 +1,28 @@
+ // controls size of circle and text of option
+ // controls size of button and text of button
+
+.button-group-option {
+  position: relative;
+  align-items: center;
+  width: 100%;
+
+  .button {
+    font-size: rem-calc(18);
+  }
+
+  &:before {
+    content: attr(data-grouptype);
+    z-index: 1;
+    color: dark-gray;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.25em;
+    border-radius: 5000px;
+    background: white;
+  
+  }
+
+  .button + .button {
+    margin-left:  0.35rem;
+  }
+}

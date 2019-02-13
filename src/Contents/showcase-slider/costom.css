@@ -51,13 +51,13 @@ button,.showlink {
 
 .slider-wrapper {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
   align-content: center;
 }
 
 .slide {
-  height: 100vh;
+  height: 90vh;
   background-size: cover !important;
 }
 
@@ -116,7 +116,7 @@ button,.showlink {
   box-sizing: border-box;
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -202,6 +202,12 @@ button,.showlink {
   }
 }
 
+.slidebtn{
+margin: auto;
+display: block;
+font-size: 20px;
+
+}
 .prize{
 margin: auto;
 display: block;

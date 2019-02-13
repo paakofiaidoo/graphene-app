@@ -2,175 +2,176 @@ import React, { Component } from 'react';
 import 'bulma/css/bulma.css'
 import "./costom.css"
 import Rating2 from "../rating/rating4"
+import Rating from 'react-rating';
 
 const product = [
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    discription:"Product Description",
     rating:"5"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    discription:"Product Description",
     rating:"4"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    discription:"Product Description",
     rating:"3"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    discription:"Product Description",
     rating:"1"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    discription:"Product Description",
     rating:"0"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    discription:"Product Description",
     rating:"2"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"5"
+    discription:"Product Description",
+    "rating":"5"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"2"
+    discription:"Product Description",
+    "rating":"2"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"1"
+    discription:"Product Description",
+    "rating":"1"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"3"
+    discription:"Product Description",
+    "rating":"3"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"5"
+    discription:"Product Description",
+    "rating":"5"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"5"
+    discription:"Product Description",
+    "rating":"5"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"5"
+    discription:"Product Description",
+    "rating":"5"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"5"
+    discription:"Product Description",
+    "rating":"5"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"5"
+    discription:"Product Description",
+    "rating":"5"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"5"
+    discription:"Product Description",
+    "rating":"5"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"2"
+    discription:"Product Description",
+    "rating":"2"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"6"
+    discription:"Product Description",
+    "rating":"6"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"5"
+    discription:"Product Description",
+    "rating":"5"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"2"
+    discription:"Product Description",
+    "rating":"2"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$200.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"2"
+    discription:"Product Description",
+    "rating":"2"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$200.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"5"
+    discription:"Product Description",
+    "rating":"5"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"5"
+    discription:"Product Description",
+    "rating":"5"
   },
   {
     image:"/static/img/winner-avatar.svg",
     name:"Name of Product",
     prize:"$500.00",
-    discription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    rating:"5"
+    discription:"Product Description",
+    "rating":"5"
   },
 ]
 
@@ -178,7 +179,7 @@ const product = [
 class Productcard extends Component {
 
     render() {  return (
-      <div>
+      <div className ="cool">
     {
       product.map((info, key) => (
         <Product
@@ -190,7 +191,8 @@ class Productcard extends Component {
         />
       ))
     }
-  </div>
+    </div>
+
                     )
 
                 }
@@ -200,41 +202,44 @@ export default Productcard;
 
 const Product = ({image, name, prize, discription, rating }) => {
   return (
-    <div className="">
-    <div className="tile is-parent productCard">
-    <article className="tile is-child notification is-success productCard">
-      <div className="content ">
-      <figure className=" is-4by3">
-        <img className="hackImage" src={image}/>
-      </figure>
-      <h3 className="topic"><strong>{name}</strong></h3>
-      <div>
-        <span className="title">{prize}</span>
+    <div className="productCard">
+      <div className="tile is-parent ">
+          <article className="  is-secondary producttile">
+              <div className="content">
+                  <figure className=" is-4by3">
+                    <img className="hackImage" src={image}/>
+                  </figure>
+                  <h3 className="topic"><strong>{name}</strong></h3>
+                  <span className="">{prize}</span>
+                  <p className="subtitle">{discription} <a>...</a></p>
+
+                        <Rating
+                        stop={3}
+                        emptySymbol={['fa fa-star-o fa-2x low', 'fa fa-star-o fa-2x low',
+                          'fa fa-star-o fa-2x medium', 'fa fa-star-o fa-2x medium',
+                          'fa fa-star-o fa-2x high', 'fa fa-star-o fa-2x high']}
+                        fullSymbol={['fa fa-star fa-2x low', 'fa fa-star fa-2x low',
+                          'fa fa-star fa-2x medium', 'fa fa-star fa-2x medium',
+                          'fa fa-star fa-2x high', 'fa fa-star fa-2x high']}
+                          fractions={2}/>
+                    <div className="field is-grouped">
+                      <p className="control">
+                        <a className="bd-tw-button button" href="#">
+                          <span>Buy Now</span>
+                        </a>
+                      </p>
+
+                      <p className="control">
+                        <a className="button is-primary" href="#">
+                          <span>more info</span>
+                        </a>
+                      </p>
+
+                    </div>
+                </div>
+            </article>
         </div>
-        <p className="subtitle">{discription}</p>
-        <Rating2 placeholderRating={rating}/>
-        <div className="field is-grouped">
-          <p className="control">
-
-
-
-            <a className="bd-tw-button button" href="#">
-              <span>Buy Now</span>
-            </a>
-          </p>
-
-          <p className="control">
-            <a className="button is-primary" href="#p">
-
-              <span>more info</span>
-            </a>
-          </p>
-
         </div>
-      </div>
-      </article>
-      </div>
-    </div>
 
   )
 }

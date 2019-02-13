@@ -49,8 +49,6 @@ class LandingPage extends Component {
           <h1 className="sec-header">Top Start Up</h1>
             <Brandslider className="slid"/>
           </div>
-
-        <Rating2/>
       </Fragment>
 
     )

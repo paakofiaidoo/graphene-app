@@ -31,7 +31,7 @@ class Navbar extends Component {
       <nav className="navbar is-fixed-top">
         <div className="navbar-brand ">
       <a className="navbar-item " href="/">
-        <img src="/static/img/logo.svg" alt="GRAPHENE" width="100px" height="15px"/>
+        <img src="/static/img/logo.png" alt="GRAPHENE" width="50px" height="50px"/>
       </a>
       <Hamburger toggleNavbar={this.toggleNavbar} activeClass={activeClass}/>
     </div>
@@ -49,7 +49,14 @@ class Navbar extends Component {
       <div className="navbar-end">
         <div className="navbar-item">
           <div className="field is-grouped">
+          <p className="control">
+          <a className="bd-tw-button button" href="#">
+
+            <img src="/static/img/shopping-cart.svg"/>
+          </a>
+          </p>
             <p className="control">
+
               <a className="bd-tw-button button" href="LogIn">
 
                 <span>Log_in

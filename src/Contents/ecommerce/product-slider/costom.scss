@@ -1,0 +1,71 @@
+.ecommerce-product-slider {
+  .orbit-previous,
+  .orbit-next {
+    color: medium-gray;
+  }
+
+  .orbit-bullets button {
+    height: 0.65rem;
+    width: 0.65rem;
+  }
+
+  .product-card {
+    background-color: white;
+    width: 200px;
+    box-shadow: 10px 1px 10px 1px #bab3b3;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .product-card-thumbnail {
+    display: inline-block;
+    position: relative;
+  }
+
+  .product-card-title {
+    font-family: 'Open sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.45rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .product-card-desc {
+    color: dark-gray;
+    display: flex;
+    font-family: 'Open sans', sans-serif;
+    font-size: 0.85rem;
+  }
+
+  .product-card-price {
+    color: dark-gray;
+    display: inline-flex;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 0.8rem;
+  }
+
+  .product-card-sale {
+    color: medium-gray;
+    display: inline-flex;
+    font-size: 0.85rem;
+    margin-left: 0.3rem;
+    text-decoration: line-through;
+  }
+
+  .product-card-colors {
+    display: block;
+    margin-top: 0.8rem;
+  }
+
+  .product-card-color-option {
+    display: inline-flex;
+    height: 25px;
+    width: 25px;
+  }
+}
+.arrange{
+  display: inline-flex;
+
+}

@@ -11,8 +11,8 @@
 }
 .hackImage {
   width: 250px;
-  height: 250px;
-  margin: auto;
+  height: 100px;
+  margin: 0px;
   border: 0px;
   align-self: center;
   justify-content: center;
@@ -24,12 +24,20 @@
   text-transform: capitalize;
 }
 .productCard{
-  width: 20px;
-  display: flex;
-  flex: auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-grow: 20px;
-  margin: 0px;
-  background-color: pink;
+  width: auto;
+  height: auto;
+
+  display:inline-flex;
+
+
+}
+.producttile{
+  padding: 10px;
+  margin-right: 10px;
+  text-align: center;
+  padding: 20px;
+margin: 10px;
+}
+.cool{
+
 }

@@ -7,15 +7,18 @@
     "bulma": "^0.7.2",
     "ecommerce-react-component-library": "^0.3.2",
     "global": "^4.3.2",
+    "node-sass": "^4.11.0",
     "react": "^16.6.3",
     "react-animated-slider": "^1.1.4",
     "react-carousel-slider": "^2.0.13",
     "react-chat-window": "^1.1.1",
     "react-dom": "^16.6.3",
     "react-rating": "^1.6.2",
+    "react-responsive-carousel": "^3.1.46",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
-    "react-star-rating-component": "^1.4.1"
+    "react-star-rating-component": "^1.4.1",
+    "scss": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",

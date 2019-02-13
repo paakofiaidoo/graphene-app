@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'bulma/css/bulma.css'
 import Slider from 'react-animated-slider';
-import Rating from "../rating/rating1"
+import Rating from 'react-rating';
 import 'react-animated-slider/build/horizontal.css';
 import "./costom.css";
 import "./animations.css"
@@ -13,7 +13,8 @@ const topBrands=[
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             "button": "View Our Profile",
 		        "user": 'company name',
-		        "userProfile": 'https://i.imgur.com/4KeKvtH.png'
+		        "userProfile": 'https://i.imgur.com/4KeKvtH.png',
+            "rating":"5"
         },
         {
             "image": "/static/img/back-light-ball-ball-shaped-326168.jpg",
@@ -68,7 +69,17 @@ return (
 						<p>{item.description}</p>
 
 						<button className="slidebtn">{item.button}</button>
-            <Rating/>
+            <Rating
+              stop={6}
+              emptySymbol={['fa fa-star-o fa-2x low', 'fa fa-star-o fa-2x low',
+                'fa fa-star-o fa-2x medium', 'fa fa-star-o fa-2x medium',
+                'fa fa-star-o fa-2x high', 'fa fa-star-o fa-2x high']}
+              fullSymbol={['fa fa-star fa-2x low', 'fa fa-star fa-2x low',
+                'fa fa-star fa-2x medium', 'fa fa-star fa-2x medium',
+                'fa fa-star fa-2x high', 'fa fa-star fa-2x high']}
+                fractions={2}
+
+            />
 					</div>
 					<section className="floor">
 						<img src={item.userProfile} alt={item.user} />

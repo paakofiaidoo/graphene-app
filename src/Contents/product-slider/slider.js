@@ -3,31 +3,51 @@ import 'bulma/css/bulma.css'
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 
-const content=[
+const topProduct=[
         {
-            "imgSrc": "/static/img/1.jpg",
-            "title": "Niklas Koppernigk",
-            "des": "19 February 1473 – 24 May 1543"
+            "image": "/static/img/ai-artificial-intelligence-astronomy-73910.jpg",
+            "title": "Name of Product",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "prize": "$56.00",
+            "button": "Buy Now",
+		        "user": 'company name',
+		        "userProfile": 'https://i.imgur.com/4KeKvtH.png'
         },
         {
-            "imgSrc": "/static/img/1.jpg",
-            "title": "Galileo Galilei",
-            "des": "15 February 1564 – 8 January 1642"
+            "image": "/static/img/back-light-ball-ball-shaped-326168.jpg",
+            "title": "Name of Product",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "prize": "$56.00",
+            "button": "Order Yours Now",
+		        "user": 'Bruno Vizovskyy',
+		        "userProfile": 'https://i.imgur.com/4KeKvtH.png'
         },
         {
-            "imgSrc": "/static/img/1.jpg",
-            "title": "Michael Faraday",
-            "des": "22 September 1791 – 25 August 1867"
+            "image": "/static/img/aqua-aquarium-art.jpg",
+            "title": "Name of Product",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "prize": "$56.00",
+            "button": "Patronise Now",
+		        "user": 'company name',
+		        "userProfile": 'https://i.imgur.com/4KeKvtH.png'
         },
         {
-            "imgSrc": "/static/img/1.jpg",
-            "title": "Marie Curie",
-            "des": "7 November 1867 – 4 July 1934"
+            "image": "/static/img/art-ball-shaped-circle.jpg",
+            "title": "Name of Product",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "prize": "$56.00",
+            "button": "Order Services Now",
+		        "user": 'company name',
+		        "userProfile": 'https://i.imgur.com/4KeKvtH.png'
         },
         {
-            "imgSrc": "/static/img/1.jpg",
-            "title": "Albert Einstein",
-            "des": "14 March 1879 – 18 April 1955"
+            "image": "/static/img/blur-charge-close-up.jpg",
+            "title": "Name of Product",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "prize": "$56.00",
+            "button": "Buy Now",
+		        "user": 'company name',
+		        "userProfile": 'https://i.imgur.com/4KeKvtH.png'
         }
     ]
 
@@ -38,12 +58,23 @@ class ProductSlider extends Component {
 return (
 
 
-  <Slider>
-    {content.map((article, index) => <div key={index}>
-      <h2>{article.title}</h2>
-      <div>{article.des}</div>
-    </div>)}
-  </Slider>
+  <Slider autoplay={5000} className="slider-wrapper ">
+			{topProduct.map((item, index) => (
+				<div
+					key={index}
+					className="slider-content"
+					style={{ background: `url('${item.image}') no-repeat center center`,
+         }}
+				>
+					<div className="inner slidecard">
+          <h1>{item.title}</h1>
+          <button>{item.button}</button>
+            <span className="prize">{item.prize}</span>
+					</div>
+				</div>
+			))}
+		</Slider>
+
 
 )}
 };
